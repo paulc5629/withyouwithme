@@ -5,7 +5,7 @@
 */
 let playerid;
 
-class Player {
+export class Player {
   constructor(id, life) {
     this.id = id;
     this.life = life;
@@ -25,19 +25,4 @@ class Player {
   }
 };
 
-
-//starting function for the game just to muck around quickly and dirty mmmmmmmmm
-
-function startGame() {
-  const playerCount = document.getElementById("player-amount").value;
-  if (playerCount<=6 && playerCount>=1){
-    for (let i = 0; i < playerCount; i++) {
-      playerid = "player"+(i+1)
-      playerid = new Player(playerid, 3);
-      console.log(playerid.id + " " + playerid.life);
-    }
-    playerid.removeLife("player1");
-  }else {
-    alert("Number of players must be between 1 and 6.");
-  }
-}
+export const player = new Player();
