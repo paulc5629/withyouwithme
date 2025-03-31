@@ -6,6 +6,7 @@
 class Game{
 
     startGame = function() {
+        
         const playerCount = document.getElementById("player-amount").value;
         /*if (playerCount<=6 && playerCount>=1){
           for (let i = 0; i < playerCount; i++) {
@@ -21,6 +22,6 @@ class Game{
       }
 }
 
-let game = new Game();
+const game = new Game();
 
-document.getElementById("start-game").addEventListener("click", game.startGame());
+//document.getElementById("start-game").onclick = game.startGame();
