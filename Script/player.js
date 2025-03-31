@@ -3,9 +3,10 @@
   Date: 2025-03-25
   Description: JavaScript code for a drinking game
 */
-let playerid;
+
 
 export class Player {
+
   constructor(id, life) {
     this.id = id;
     this.life = life;
