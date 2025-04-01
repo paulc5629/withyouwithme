@@ -14,8 +14,8 @@ class Game{
           playerid = new Player(playerid, 3);
           console.log(playerid);
         }
-          
-          //playerid.removeLife("player1");
+          playerid.removeLife("player1");
+          playerid.displayPlayer("player3");
       }else {
         alert("Number of players must be between 1 and 6.");
       }

@@ -11,6 +11,11 @@ export class Player {
     this.id = id;
     this.life = life;
   }
+
+  displayPlayer = function(playerid){
+    console.log(this.playerid + " has " + this.life + " life");
+  }
+
   removeLife = function(playerid){
     this.playerId = playerid;
     this.life--;
