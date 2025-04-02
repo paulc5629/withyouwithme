@@ -12,18 +12,17 @@ export class Player {
     this.life = life;
   }
 
-  displayPlayer = function(playerid){
-    console.log(this.playerid + " has " + this.life + " life");
+  displayPlayer = function(id){
+    console.log(this.id + " has " + this.life + " life");
   }
 
-  removeLife = function(playerid){
-    this.playerId = playerid;
+  removeLife = function(id){
     this.life--;
     if (this.life <= 0) {
       console.log(this.name + " has been eliminated");
       this.forfit(playerid);
     }
-    console.log(this.playerId + " has " + this.life + " life");
+    console.log(this.id + " has lost a life");
   }
 
   forfit = function(playerid){
@@ -31,4 +30,4 @@ export class Player {
   }
 };
 
-export const player = new Player();
+//export let player = new Player();
